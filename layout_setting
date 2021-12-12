@@ -4,7 +4,7 @@ lam='\033[1;34m'
 tim='\033[1;35m'           
 plain='\033[0m'
 cur_dir=$(pwd)
-[[ $EUID -ne 0 ]] && echo -e "${tim}Chú ý：${plain}Tập lệnh này phải được chạy với tư cách người dùng gốc ${tim}(root)! \n ${tim}➫Vui Lòng Gõ Lệnh: ${lam}sudo -i \n ➬Để Kích Hoạt Root, và thử lại lần nữa \n${vang}➲${plain} " && exit 1
+[[ $EUID -ne 0 ]] && echo -e "${tim}Chú ý：${plain}Tập lệnh này phải được chạy với tư cách người dùng gốc ${tim}(root)! \n ${tim}➫Vui Lòng Gõ Lệnh: ${lam}sudo -i \n ➬Để Kích Hoạt Root, và thử lại lần nữa \n${plain} " && exit 1
 # Mã Lệnh
 apt-get update -y
 sudo apt install speedtest-cli
